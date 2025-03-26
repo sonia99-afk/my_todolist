@@ -1,0 +1,90 @@
+
+.todo-app {
+  width: 500px; /* Ширина приложения */
+  margin: 0 auto; /* Центрирование приложения */
+  margin-top: 10px;
+  padding: 20px; /* Отступы внутри приложения */
+  border: 1px solid #ccc; /* Рамка приложения */
+  border-radius: 8px; /* Закругленные углы */
+  font-family: Arial, sans-serif;
+}
+
+
+h1 {
+  font-family: 'Comic Sans MS', cursive, sans-serif; /* Милый шрифт для заголовка */
+  font-size: 50px; /* Размер шрифта */
+  color: #ff69b4; /* Розовый цвет текста */
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2); /* Тень для текста */
+  margin-bottom: 20px; /* Отступ снизу заголовка */
+  transition: color 0.3s ease; /* Плавный переход цвета */
+  text-align: center; /* Центрирование заголовка */
+}
+
+h1:hover {
+  color: #ff1493; /* Изменение цвета при наведении */
+}
+
+input {
+  width: calc(100% - 22px); /* Ширина инпута с учетом отступов */
+  padding: 10px; /* Отступы внутри инпута */
+  border: 1px solid #ccc; /* Рамка инпута */
+  border-radius: 4px; /* Закругленные углы */
+  margin-bottom: 10px; /* Отступ снизу */
+}
+
+button {
+  padding: 10px; /* Отступы внутри кнопки */
+  border: none; /* Без рамки */
+  border-radius: 4px; /* Закругленные углы */
+  background-color: #272727; /* Цвет фона кнопки */
+  color: #fff; /* Цвет текста кнопки */
+  cursor: pointer; /* Курсор "указатель" при наведении */
+  margin-right: 5px; /* Отступ между кнопками */
+}
+
+button:hover {
+  background-color:  #ff69b4; /* Темный цвет фона при наведении */
+}
+
+ul {
+  list-style-type: none; /* Убираем маркеры списка */
+  padding: 0; /* Убираем отступы */
+}
+
+li {
+  display: flex; /* Используем flexbox для выравнивания */
+  justify-content: space-between; /* Распределяем пространство между элементами */
+  align-items: center; /* Выравнивание по центру по вертикали */
+  padding: 10px; /* Отступы внутри элемента списка */
+  border-bottom: 1px solid #eee; /* Линия разделяющая элементы */
+
+}
+
+.task-text {
+  overflow: hidden; /* Скрыть переполнение текста */
+  text-overflow: ellipsis; /* Добавить многоточие для обрезанного текста */
+  white-space: nowrap; /* Запрет переноса текста на новую строку */
+  flex-grow: 1; /* Занять всё доступное пространство */
+}
+
+.task-image {
+  max-width: 100%; /* Ограничение ширины изображения */
+  height: auto; /* Автоматическая высота для соблюдения пропорций */
+  margin-top: 10px; /* Отступ сверху */
+}
+
+/* Адаптивная верстка */
+@media (max-width: 600px) {
+  .todo-app {
+    width: 100%;
+    padding: 10px;
+  }
+
+  input {
+    width: 60%;
+  }
+
+  button {
+    padding: 6px 10px;
+  }
+}
