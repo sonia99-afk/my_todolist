@@ -10,7 +10,7 @@ const TodoApp = () => {
   const [editIndex, setEditIndex] = useState(null);
   const [imageSrc, setImageSrc] = useState('cat2.jpg'); // Исходная картинка
   
-  const server_url = process.env.SERVER_URI || "https://my-todolist-server2.onrender.com";
+  const server_url = "https://my-todolist-server2.onrender.com";
 
   const getTasks = () => {
     axios.get(server_url+"/task").then((r) => {
