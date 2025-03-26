@@ -5,7 +5,7 @@ const MongoClient = require("mongodb").MongoClient;
 const bodyParser = require('body-parser');
 
 // const db_url = "mongodb://127.0.0.1:27017/";
-const db_url = process.env.MONGODB_URI || "mongodb+srv://sofyamiteneva:root@cluster0.tehkh8l.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0";
+const db_url = process.env.MONGODB_URI || "mongodb+srv://mitenevasofya:358962147@cluster0.i3wyy.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0";
 
 function connect() {
     const mongoClient = new MongoClient(db_url);
